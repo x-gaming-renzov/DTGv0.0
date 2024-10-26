@@ -1,0 +1,359 @@
+{
+    "nodes": [
+        {
+            "id": "node1",
+            "npc_dialogue": "Well, well, look who's decided to grace us with their presence. Tell me, how is your grand 'Dance Floor Extraordinaire' supposed to get spirits grooving when I can't even get a decent snack around here?",
+            "tag_of_node": "#greeting #sarcastic #unfriendly",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I apologize for the inconvenience. Let me get that snack for you right away.",
+                    "next_node": "node2"
+                },
+                {
+                    "player_dialogue_choice": "Maybe dancing on an empty stomach isn't so bad? Think of it as spiritual fasting.",
+                    "next_node": "node3"
+                },
+                {
+                    "player_dialogue_choice": "If you wanted a five-star service, you might be in the wrong afterlife.",
+                    "next_node": "node4"
+                }
+            ]
+        },
+        {
+            "id": "node2",
+            "npc_dialogue": "Oh, aren't you just the epitome of customer service? Next you'll be offering to shine my shoes.",
+            "tag_of_node": "#sarcastic #rude",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Just trying to make your stay more pleasant. What kind of snack would you like?",
+                    "next_node": "node5"
+                },
+                {
+                    "player_dialogue_choice": "Well, if you don't want my help, feel free to continue sulking.",
+                    "next_node": "node6"
+                }
+            ]
+        },
+        {
+            "id": "node3",
+            "npc_dialogue": "Spiritual fasting? That's rich. Did you come up with that while ignoring my requests?",
+            "tag_of_node": "#sarcastic #annoyed",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Actually, I thought you'd appreciate the humor.",
+                    "next_node": "node7"
+                },
+                {
+                    "player_dialogue_choice": "No, but since you're not hungry, perhaps you can help me test the dance floor.",
+                    "next_node": "node8"
+                }
+            ]
+        },
+        {
+            "id": "node4",
+            "npc_dialogue": "Ah, snarky retorts. I didn't realize the afterlife came with a side of attitude.",
+            "tag_of_node": "#sarcastic #rude",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Just matching your energy.",
+                    "next_node": "node9"
+                },
+                {
+                    "player_dialogue_choice": "Apologies, that was uncalled for. Let's start over.",
+                    "next_node": "node10"
+                }
+            ]
+        },
+        {
+            "id": "node5",
+            "npc_dialogue": "Surprise me. Unless that's too challenging for the master planner.",
+            "tag_of_node": "#mocking #sarcastic",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Consider it done. I'll be back shortly.",
+                    "next_node": "node11"
+                },
+                {
+                    "player_dialogue_choice": "You know, a 'thank you' wouldn't hurt.",
+                    "next_node": "node12"
+                }
+            ]
+        },
+        {
+            "id": "node6",
+            "npc_dialogue": "Sulking? I'm merely enjoying the world's slowest service.",
+            "tag_of_node": "#sarcastic #unfriendly",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Perhaps I should speed things up then.",
+                    "next_node": "node13"
+                },
+                {
+                    "player_dialogue_choice": "If you're so impatient, maybe you should help yourself.",
+                    "next_node": "node14"
+                }
+            ]
+        },
+        {
+            "id": "node7",
+            "npc_dialogue": "Your humor needs work. Maybe stick to service.",
+            "tag_of_node": "#sarcastic #unfriendly",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Duly noted. Let's focus on getting you that snack.",
+                    "next_node": "node15"
+                },
+                {
+                    "player_dialogue_choice": "At least I tried. What would make you laugh?",
+                    "next_node": "node16"
+                }
+            ]
+        },
+        {
+            "id": "node8",
+            "npc_dialogue": "Test the dance floor? Now that's amusing. Watching you scramble is entertainment enough.",
+            "tag_of_node": "#sarcastic #entertained",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Glad to be of service. So, will you join me?",
+                    "next_node": "node17"
+                },
+                {
+                    "player_dialogue_choice": "Well, if you're content watching, suit yourself.",
+                    "next_node": "node18"
+                }
+            ]
+        },
+        {
+            "id": "node9",
+            "npc_dialogue": "Hmm, a manager with a backbone. Didn't see that coming.",
+            "tag_of_node": "#surprised #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I have my moments. Now, can I help you with anything?",
+                    "next_node": "node19"
+                },
+                {
+                    "player_dialogue_choice": "There's more where that came from.",
+                    "next_node": "node20"
+                }
+            ]
+        },
+        {
+            "id": "node10",
+            "npc_dialogue": "Starting over? Fine. But only because I'm curious how this plays out.",
+            "tag_of_node": "#neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Great. Let's make your experience here enjoyable.",
+                    "next_node": "node21"
+                },
+                {
+                    "player_dialogue_choice": "I assure you, you won't be disappointed.",
+                    "next_node": "node22"
+                }
+            ]
+        },
+        {
+            "id": "node11",
+            "npc_dialogue": "I'll believe it when I see it. Just don't keep me waiting forever.",
+            "tag_of_node": "#impatient #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I'll be right back with your surprise snack.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Maybe patience isn't your strong suit.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node12",
+            "npc_dialogue": "A 'thank you'? How adorable. Is that what you live for?",
+            "tag_of_node": "#mocking #sarcastic",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "No, but some appreciation would be nice.",
+                    "next_node": "neutral_ending"
+                },
+                {
+                    "player_dialogue_choice": "Forget it. I'll get back to work.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node13",
+            "npc_dialogue": "Please do. I might turn to dust before then.",
+            "tag_of_node": "#sarcastic #impatient",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "On it. Your snack will arrive shortly.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Keep up the attitude, and I might just take my time.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node14",
+            "npc_dialogue": "Helping myself? Now there's an idea. But watching you flail is half the fun.",
+            "tag_of_node": "#entertained #sarcastic",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Glad I can provide some entertainment.",
+                    "next_node": "neutral_ending"
+                },
+                {
+                    "player_dialogue_choice": "Suit yourself. I'll be elsewhere if you need me.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node15",
+            "npc_dialogue": "Finally taking your job seriously? It's about time.",
+            "tag_of_node": "#sarcastic #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Better late than never. Your snack is on the way.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Keep pushing, and I might reconsider.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node16",
+            "npc_dialogue": "What would make me laugh? Watching you dance, perhaps.",
+            "tag_of_node": "#teasing #entertained",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Challenge accepted. Prepare to be amazed.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "I'll pass on making a fool of myself.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "node17",
+            "npc_dialogue": "Join you? And miss this spectacle? Not a chance.",
+            "tag_of_node": "#amused #sarcastic",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Your loss. Enjoy the show.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Suit yourself. I'll find someone more fun.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "node18",
+            "npc_dialogue": "Oh, don't mind me. I'm perfectly content right here.",
+            "tag_of_node": "#content #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Alright then. Let me know if you need anything.",
+                    "next_node": "neutral_ending"
+                },
+                {
+                    "player_dialogue_choice": "Enjoy your solitude.",
+                    "next_node": "negative_ending"
+                }
+            ]
+        },
+        {
+            "id": "node19",
+            "npc_dialogue": "Maybe you can. Let's see if you're as capable as you pretend.",
+            "tag_of_node": "#testing #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Give me a chance to prove it.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Or you could keep doubting me. Your choice.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "node20",
+            "npc_dialogue": "Confident, aren't we? Don't let it go to your head.",
+            "tag_of_node": "#sarcastic #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Confidence is key in this line of work.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "I'll try to stay humble.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "node21",
+            "npc_dialogue": "We'll see about that. Don't get your hopes up.",
+            "tag_of_node": "#doubtful #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I'll take my chances.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Fair enough. Let me know if you need anything.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "node22",
+            "npc_dialogue": "Promises, promises. Actions speak louder, you know.",
+            "tag_of_node": "#skeptical #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Then I'll let my actions do the talking.",
+                    "next_node": "positive_ending"
+                },
+                {
+                    "player_dialogue_choice": "Words are all I have right now.",
+                    "next_node": "neutral_ending"
+                }
+            ]
+        },
+        {
+            "id": "positive_ending",
+            "npc_dialogue": "Well, maybe you're not entirely hopeless. This isn't half bad.",
+            "tag_of_node": "#satisfied #entertained",
+            "player_dialogue_choices": [],
+            "endtag": "Positive Ending"
+        },
+        {
+            "id": "neutral_ending",
+            "npc_dialogue": "I suppose this will do for now. Don't get used to me being agreeable.",
+            "tag_of_node": "#neutral #indifferent",
+            "player_dialogue_choices": [],
+            "endtag": "Neutral Ending"
+        },
+        {
+            "id": "negative_ending",
+            "npc_dialogue": "Figures. Can't even count on decent assistance around here.",
+            "tag_of_node": "#frustrated #unfriendly",
+            "player_dialogue_choices": [],
+            "endtag": "Negative Ending"
+        }
+    ]
+}

@@ -2,3 +2,4 @@ streamlit>=1.26.0
 openai
 requests
 python-dotenv
+streamlit-flow-component

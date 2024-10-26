@@ -12,7 +12,7 @@ class LLM():
         completion = self.openai.chat.completions.create(
         model=model,
         messages=[
-                {"role": "system", "content": prompt},
+                {"role": "user", "content": prompt},
             ],
         response_format={"type": "json_object"}
         )
@@ -25,7 +25,7 @@ class LLM():
         completion = self.openai.chat.completions.create(
         model=model,
         messages=[
-                {"role": "system", "content": prompt},
+                {"role": "user", "content": prompt},
             ],
         response_format={"type": "text"}
         )
