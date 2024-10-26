@@ -1,0 +1,179 @@
+{
+    "nodes": [
+        {
+            "id": "node1",
+            "npc_dialogue": "Well, if it isn't my favorite concourse manager! Did you sprinkle stardust on that new dance floor, or is it just naturally that dazzling?",
+            "tag_of_node": "#greeting #compliment",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Glad you noticed! We thought a touch of shimmer would brighten your afterlife.",
+                    "next_node": "node2"
+                },
+                {
+                    "player_dialogue_choice": "Actually, the spirits seem to make it shine brighter!",
+                    "next_node": "node3"
+                },
+                {
+                    "player_dialogue_choice": "Do you think it's too much sparkle? We could tone it down.",
+                    "next_node": "node4"
+                }
+            ]
+        },
+        {
+            "id": "node2",
+            "npc_dialogue": "Oh, it's doing wonders! Feels like I'm dancing among the stars. You really know how to light up a room.",
+            "tag_of_node": "#happy #compliment",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Wait till you see the garden we're planning\u2014it'll be a carnival of colors!",
+                    "next_node": "node5"
+                },
+                {
+                    "player_dialogue_choice": "I'm glad you're enjoying it. Any suggestions?",
+                    "next_node": "node6"
+                }
+            ]
+        },
+        {
+            "id": "node3",
+            "npc_dialogue": "Ah, flattery will get you everywhere! Maybe we're just a bright bunch, huh?",
+            "tag_of_node": "#friendly #joking",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Indeed! Would you like to contribute some of your stories to the ambiance?",
+                    "next_node": "node7"
+                },
+                {
+                    "player_dialogue_choice": "Your happiness makes this place shine.",
+                    "next_node": "node8"
+                }
+            ]
+        },
+        {
+            "id": "node4",
+            "npc_dialogue": "Too much? Oh no, it's perfect! Unless you're worried about causing spirit blindness.",
+            "tag_of_node": "#joking",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Just wanted to make sure it's up to your standards.",
+                    "next_node": "node9"
+                },
+                {
+                    "player_dialogue_choice": "Maybe we should provide shades at the entrance?",
+                    "next_node": "node10"
+                }
+            ]
+        },
+        {
+            "id": "node5",
+            "npc_dialogue": "A carnival garden? Now you're speaking my language! Will there be ethereal smoothies too?",
+            "tag_of_node": "#excited",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Absolutely! We'll serve the best blends this side of the afterlife.",
+                    "next_node": "end1"
+                },
+                {
+                    "player_dialogue_choice": "Hmm, didn't think of that, but it's a great idea!",
+                    "next_node": "end2"
+                }
+            ]
+        },
+        {
+            "id": "node6",
+            "npc_dialogue": "Suggestions? Well, a bar serving ethereal smoothies would be the cherry on top!",
+            "tag_of_node": "#suggestion",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Consider it done! Anything for our favorite spirits.",
+                    "next_node": "end1"
+                },
+                {
+                    "player_dialogue_choice": "Smoothies, you say? I'll see if we can whip up a recipe.",
+                    "next_node": "end2"
+                }
+            ]
+        },
+        {
+            "id": "node7",
+            "npc_dialogue": "Contribute my stories? Oh, you might regret opening that door!",
+            "tag_of_node": "#joking",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I'm all ears! The more laughter, the better.",
+                    "next_node": "end1"
+                },
+                {
+                    "player_dialogue_choice": "On second thought, maybe we should start with a few.",
+                    "next_node": "end2"
+                }
+            ]
+        },
+        {
+            "id": "node8",
+            "npc_dialogue": "You sure know how to make a spirit feel special!",
+            "tag_of_node": "#happy",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Only the best for our guests.",
+                    "next_node": "end1"
+                },
+                {
+                    "player_dialogue_choice": "Just doing my job.",
+                    "next_node": "end2"
+                }
+            ]
+        },
+        {
+            "id": "node9",
+            "npc_dialogue": "Your standards seem pretty high. Maybe you should let loose a little?",
+            "tag_of_node": "#concerned",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "You might be right. Let's aim for more fun.",
+                    "next_node": "end2"
+                },
+                {
+                    "player_dialogue_choice": "I just want everything to be perfect.",
+                    "next_node": "end3"
+                }
+            ]
+        },
+        {
+            "id": "node10",
+            "npc_dialogue": "Shades at the entrance? Now that's a spirit of humor I like!",
+            "tag_of_node": "#laughing",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Glad you appreciate my joke.",
+                    "next_node": "end2"
+                },
+                {
+                    "player_dialogue_choice": "Wait, were you being serious?",
+                    "next_node": "end3"
+                }
+            ]
+        },
+        {
+            "id": "end1",
+            "npc_dialogue": "I can't wait! This place just keeps getting better. Here's a little something for your efforts.",
+            "tag_of_node": "#positive",
+            "player_dialogue_choices": [],
+            "endtag": "positive"
+        },
+        {
+            "id": "end2",
+            "npc_dialogue": "Sounds good! Keep up the good work.",
+            "tag_of_node": "#neutral",
+            "player_dialogue_choices": [],
+            "endtag": "neutral"
+        },
+        {
+            "id": "end3",
+            "npc_dialogue": "Well, perhaps perfection is overrated. Don't stress too much.",
+            "tag_of_node": "#negative",
+            "player_dialogue_choices": [],
+            "endtag": "negative"
+        }
+    ]
+}

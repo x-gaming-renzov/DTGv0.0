@@ -133,11 +133,11 @@ FORMAT : `
             'tag_of_node' : 'unique tag of node describing this stage of conversation',
             'player_dialogue_choices' : [
                 {{
-                    'player_dialogue_choice_1' : 'dialogue option 1 for player. this is what player says to NPC',
+                    'player_dialogue_choice' : 'dialogue option 1 for player. this is what player says to NPC',
                     'next_node' : 'unique string id of next node'
                 }},
                 {{
-                    'player_dialogue_choice_2' : 'dialogue option 2 for player. this is what player says to NPC',
+                    'player_dialogue_choice' : 'dialogue option 2 for player. this is what player says to NPC',
                     'next_node' : 'unique string id of next node'
                 }}
             ],
@@ -149,11 +149,11 @@ FORMAT : `
             'tag_of_node' : 'unique tag of node describing this stage of conversation',
             'player_dialogue_choices' : [
                 {{
-                    'player_dialogue_choice_1' : 'dialogue option 1 for player in string',
+                    'player_dialogue_choice' : 'dialogue option 1 for player in string',
                     'next_node' : 'unique string id of next node in string'
                 }},
                 {{
-                    'player_dialogue_choice_2' : 'dialogue option 2 for player',
+                    'player_dialogue_choice' : 'dialogue option 2 for player',
                     'next_node' : 'unique string id of next node'
                 }}
             ],
@@ -195,11 +195,11 @@ Format :
             'tag_of_node' : 'unique tag of node describing this stage of conversation',
             'player_dialogue_choices' : [
                 {{
-                    'player_dialogue_choice_1' : 'dialogue option 1 for player. this is what player says to NPC',
+                    'player_dialogue_choice' : 'dialogue option 1 for player. this is what player says to NPC',
                     'next_node' : 'unique string id of next node'
                 }},
                 {{
-                    'player_dialogue_choice_2' : 'dialogue option 2 for player. this is what player says to NPC',
+                    'player_dialogue_choice' : 'dialogue option 2 for player. this is what player says to NPC',
                     'next_node' : 'unique string id of next node'
                 }}
             ],
@@ -211,11 +211,11 @@ Format :
             'tag_of_node' : 'unique tag of node describing this stage of conversation',
             'player_dialogue_choices' : [
                 {{
-                    'player_dialogue_choice_1' : 'dialogue option 1 for player in string',
+                    'player_dialogue_choice' : 'dialogue option 1 for player in string',
                     'next_node' : 'unique string id of next node in string'
                 }},
                 {{
-                    'player_dialogue_choice_2' : 'dialogue option 2 for player',
+                    'player_dialogue_choice' : 'dialogue option 2 for player',
                     'next_node' : 'unique string id of next node'
                 }}
             ],
