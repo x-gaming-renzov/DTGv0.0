@@ -78,6 +78,7 @@ RULES :
 6. Ending parameters must be balanced and not too much in favor of player.
 7. Ending parameters must be balanced and not too much in favor of NPC.
 8. Ending parameters must be balanced and not too much in favor of game world.
+9. Strictly follow answer format.
 
 Below is summary of conversation between player and NPC:
 {{{abstract}}}
@@ -141,7 +142,7 @@ FORMAT : `
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'endtag' : 'ending tag for node (only for ending node)'
+            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
         }},
         {{
             'id' : 'unique string id of node',
@@ -157,7 +158,7 @@ FORMAT : `
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'end_node_effect_tags' : 'tags from possible endings for possible ending node (only for ending node)'
+            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
         }},...
     ]
 }}`
@@ -203,7 +204,7 @@ Format :
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'endtag' : 'ending tag for node (only for ending node)'
+            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
         }},
         {{
             'id' : 'unique string id of node',
@@ -219,7 +220,7 @@ Format :
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'end_node_effect_tags' : {{tags from possible endings for possible ending node (only for ending node)}}
+            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
         }},...
     ]
 }}

@@ -1,0 +1,168 @@
+{
+    "nodes": [
+        {
+            "id": "node1",
+            "npc_dialogue": "Oh! Hi there! I didn't see you over my stumbling. This dance floor seems to have a mind of its own!",
+            "tag_of_node": "#greeting #confused #amused #shy",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Are you alright? Need a hand?",
+                    "next_node": "node2"
+                },
+                {
+                    "player_dialogue_choice": "Maybe the dance floor is just testing your moves!",
+                    "next_node": "node3"
+                }
+            ]
+        },
+        {
+            "id": "node2",
+            "npc_dialogue": "Oh, that's kind of you! I just can't seem to get these steps right. Everyone else makes it look so easy.",
+            "tag_of_node": "#apology #shy #uncooperative #confused",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Don't worry, everyone starts somewhere. Want me to try a simpler dance with you?",
+                    "next_node": "node4"
+                },
+                {
+                    "player_dialogue_choice": "Maybe dancing isn't for everyone. How about we find something else to do?",
+                    "next_node": "node5"
+                }
+            ]
+        },
+        {
+            "id": "node3",
+            "npc_dialogue": "Ha! If that's the case, the floor is winning. I wish I could dance without tripping over my own feet.",
+            "tag_of_node": "#joke #funny #amused #lighthearted",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Maybe you just need a different beat! Care to try again?",
+                    "next_node": "node6"
+                },
+                {
+                    "player_dialogue_choice": "Perhaps the floor just needs to get used to your style.",
+                    "next_node": "node5"
+                }
+            ]
+        },
+        {
+            "id": "node4",
+            "npc_dialogue": "You'd teach me? That would be wonderful! But what if I mess up again?",
+            "tag_of_node": "#request #indirect #shy #helpful",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "It's okay to make mistakes. That's how we learn!",
+                    "next_node": "node7"
+                },
+                {
+                    "player_dialogue_choice": "If you don't try, you'll never know. Let's give it a shot!",
+                    "next_node": "node7"
+                }
+            ]
+        },
+        {
+            "id": "node5",
+            "npc_dialogue": "Oh, maybe you're right. Dancing might not be for me. But I don't really know what else to do here.",
+            "tag_of_node": "#disappointment #sad #confused #lazy",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Well, what do you enjoy doing?",
+                    "next_node": "node9"
+                },
+                {
+                    "player_dialogue_choice": "Sometimes, stepping out of your comfort zone can be fun.",
+                    "next_node": "node10"
+                }
+            ]
+        },
+        {
+            "id": "node6",
+            "npc_dialogue": "I'd like that! Maybe a different song will help me find my rhythm.",
+            "tag_of_node": "#encouragement #kind #supportive #optimistic",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Great! Let's find a song you like.",
+                    "next_node": "node4"
+                },
+                {
+                    "player_dialogue_choice": "I'm sure with the right tune, you'll be dancing like a pro!",
+                    "next_node": "node4"
+                }
+            ]
+        },
+        {
+            "id": "node7",
+            "npc_dialogue": "Maybe you're right! Let's give it another try. Thank you for believing in me!",
+            "tag_of_node": "#gratitude #positive #friendly #optimistic",
+            "end_node_effect": {
+                "mood": 0.3,
+                "restlessness": -0.2,
+                "currency": 50,
+                "statusEffect": "encouraged",
+                "add": true
+            }
+        },
+        {
+            "id": "node9",
+            "npc_dialogue": "Well, I used to enjoy singing, but I'm too shy to sing in front of others now.",
+            "tag_of_node": "#confession #shy #confused #lazy",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Maybe we can find a quiet spot and you can sing softly?",
+                    "next_node": "node11"
+                },
+                {
+                    "player_dialogue_choice": "You shouldn't hide your talents. I'm sure your voice is wonderful.",
+                    "next_node": "node12"
+                }
+            ]
+        },
+        {
+            "id": "node10",
+            "npc_dialogue": "Stepping out of my comfort zone brought me here, and look how that's going...",
+            "tag_of_node": "#disappointment #sad #confused #lazy",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Every new experience comes with challenges. Don't give up!",
+                    "next_node": "node12"
+                },
+                {
+                    "player_dialogue_choice": "Perhaps it's just not the right time. Take things at your own pace.",
+                    "next_node": "node13"
+                }
+            ]
+        },
+        {
+            "id": "node11",
+            "npc_dialogue": "Maybe you're right... But I just don't feel up to it right now.",
+            "tag_of_node": "#apology #uncooperative #sad",
+            "end_node_effect": {
+                "mood": 0.0,
+                "restlessness": 0.0,
+                "currency": 0
+            }
+        },
+        {
+            "id": "node12",
+            "npc_dialogue": "You think so? Well, maybe I'll give it a try when I'm feeling more confident.",
+            "tag_of_node": "#hopeful #shy #optimistic",
+            "end_node_effect": {
+                "mood": 0.0,
+                "restlessness": 0.0,
+                "currency": 0
+            }
+        },
+        {
+            "id": "node13",
+            "npc_dialogue": "I guess I'll just sit this one out. Thanks anyway.",
+            "tag_of_node": "#disappointment #uncooperative #sad",
+            "end_node_effect": {
+                "mood": -0.3,
+                "restlessness": 0.2,
+                "currency": -50,
+                "statusEffect": "disappointed",
+                "add": true
+            }
+        }
+    ]
+}

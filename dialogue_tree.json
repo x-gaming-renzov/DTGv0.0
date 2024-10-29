@@ -1,179 +1,121 @@
 {
     "nodes": [
         {
-            "id": "node1",
-            "npc_dialogue": "Well, if it isn't my favorite concourse manager! Did you sprinkle stardust on that new dance floor, or is it just naturally that dazzling?",
-            "tag_of_node": "#greeting #compliment",
+            "id": "1",
+            "npc_dialogue": "Oh, what a delightful day! I finally found a place bursting with pickles and groves! It's like I\u2019m swimming in nostalgia! How has your journey been managing this lovely concourse?",
+            "tag_of_node": "#greeting #happy #friendly #positive #sociable",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Glad you noticed! We thought a touch of shimmer would brighten your afterlife.",
-                    "next_node": "node2"
+                    "player_dialogue_choice": "It's been a pickle of a time, I must say!",
+                    "next_node": "2"
                 },
                 {
-                    "player_dialogue_choice": "Actually, the spirits seem to make it shine brighter!",
-                    "next_node": "node3"
-                },
-                {
-                    "player_dialogue_choice": "Do you think it's too much sparkle? We could tone it down.",
-                    "next_node": "node4"
+                    "player_dialogue_choice": "A mixed bag, but I\u2019m hanging in there.",
+                    "next_node": "3"
                 }
             ]
         },
         {
-            "id": "node2",
-            "npc_dialogue": "Oh, it's doing wonders! Feels like I'm dancing among the stars. You really know how to light up a room.",
-            "tag_of_node": "#happy #compliment",
+            "id": "2",
+            "npc_dialogue": "A pickle of a time, you say? Now that has quite the crunch! What kind of spirits have you encountered along the way?",
+            "tag_of_node": "#question #curious #friendly #neutral #open",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Wait till you see the garden we're planning\u2014it'll be a carnival of colors!",
-                    "next_node": "node5"
+                    "player_dialogue_choice": "Oh, all kinds! They bring their own flavors.",
+                    "next_node": "4"
                 },
                 {
-                    "player_dialogue_choice": "I'm glad you're enjoying it. Any suggestions?",
-                    "next_node": "node6"
+                    "player_dialogue_choice": "Just the usual grumpy ones! I could use some help.",
+                    "next_node": "5"
                 }
             ]
         },
         {
-            "id": "node3",
-            "npc_dialogue": "Ah, flattery will get you everywhere! Maybe we're just a bright bunch, huh?",
-            "tag_of_node": "#friendly #joking",
+            "id": "3",
+            "npc_dialogue": "Hang in there! Even the pickles had their ups and downs! How do you keep it all together with those spirits drifting in and out?",
+            "tag_of_node": "#statement #supportive #positive #informal #friendly",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Indeed! Would you like to contribute some of your stories to the ambiance?",
-                    "next_node": "node7"
+                    "player_dialogue_choice": "I just try to keep the good vibes rolling!",
+                    "next_node": "4"
                 },
                 {
-                    "player_dialogue_choice": "Your happiness makes this place shine.",
-                    "next_node": "node8"
+                    "player_dialogue_choice": "Honestly, it can be a bit overwhelming at times.",
+                    "next_node": "5"
                 }
             ]
         },
         {
-            "id": "node4",
-            "npc_dialogue": "Too much? Oh no, it's perfect! Unless you're worried about causing spirit blindness.",
-            "tag_of_node": "#joking",
+            "id": "4",
+            "npc_dialogue": "That is a splendid approach! Speaking of good vibes, have you considered hosting a 'Pickle Picnic'? It could uplift all the spirits even more!",
+            "tag_of_node": "#offer #helpful #generous #positive #friendly",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Just wanted to make sure it's up to your standards.",
-                    "next_node": "node9"
+                    "player_dialogue_choice": "That sounds fun! I could use help organizing it!",
+                    "next_node": "6"
                 },
                 {
-                    "player_dialogue_choice": "Maybe we should provide shades at the entrance?",
-                    "next_node": "node10"
+                    "player_dialogue_choice": "A 'Pickle Picnic'? Who would even attend?",
+                    "next_node": "7"
                 }
             ]
         },
         {
-            "id": "node5",
-            "npc_dialogue": "A carnival garden? Now you're speaking my language! Will there be ethereal smoothies too?",
-            "tag_of_node": "#excited",
+            "id": "5",
+            "npc_dialogue": "Well, you're doing fantastic! Sometimes, you just need to embrace the unexpected joys of management! What do you find most rewarding about it?",
+            "tag_of_node": "#suggestion #encouragement #positive #friendly #optimistic",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Absolutely! We'll serve the best blends this side of the afterlife.",
-                    "next_node": "end1"
+                    "player_dialogue_choice": "Seeing the spirits happy is worth it!",
+                    "next_node": "6"
                 },
                 {
-                    "player_dialogue_choice": "Hmm, didn't think of that, but it's a great idea!",
-                    "next_node": "end2"
+                    "player_dialogue_choice": "I guess it's all about the journey, right?",
+                    "next_node": "7"
                 }
             ]
         },
         {
-            "id": "node6",
-            "npc_dialogue": "Suggestions? Well, a bar serving ethereal smoothies would be the cherry on top!",
-            "tag_of_node": "#suggestion",
+            "id": "6",
+            "npc_dialogue": "Wonderful! A 'Pickle Picnic' it is then! I can't wait for all the delightful surprises to unfold! You\u2019re truly magnificent at this!",
+            "tag_of_node": "#compliment #praise #friendly #positive #sincere",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Consider it done! Anything for our favorite spirits.",
-                    "next_node": "end1"
+                    "player_dialogue_choice": "Thanks! I really appreciate the support!",
+                    "next_node": "8"
                 },
                 {
-                    "player_dialogue_choice": "Smoothies, you say? I'll see if we can whip up a recipe.",
-                    "next_node": "end2"
+                    "player_dialogue_choice": "Do you really think I\u2019m up to the task?",
+                    "next_node": "8"
                 }
             ]
         },
         {
-            "id": "node7",
-            "npc_dialogue": "Contribute my stories? Oh, you might regret opening that door!",
-            "tag_of_node": "#joking",
+            "id": "7",
+            "npc_dialogue": "Oh, you underestimate the joy of pickles! They have a knack for bringing spirits together! Have faith! You might just be surprised!",
+            "tag_of_node": "#exclamation #excited #happy #energetic #enthusiastic",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "I'm all ears! The more laughter, the better.",
-                    "next_node": "end1"
+                    "player_dialogue_choice": "Alright, I\u2019ll give it a shot!",
+                    "next_node": "8"
                 },
                 {
-                    "player_dialogue_choice": "On second thought, maybe we should start with a few.",
-                    "next_node": "end2"
+                    "player_dialogue_choice": "Let's hope this picnic doesn\u2019t turn sour!",
+                    "next_node": "8"
                 }
             ]
         },
         {
-            "id": "node8",
-            "npc_dialogue": "You sure know how to make a spirit feel special!",
-            "tag_of_node": "#happy",
-            "player_dialogue_choices": [
-                {
-                    "player_dialogue_choice": "Only the best for our guests.",
-                    "next_node": "end1"
-                },
-                {
-                    "player_dialogue_choice": "Just doing my job.",
-                    "next_node": "end2"
-                }
-            ]
-        },
-        {
-            "id": "node9",
-            "npc_dialogue": "Your standards seem pretty high. Maybe you should let loose a little?",
-            "tag_of_node": "#concerned",
-            "player_dialogue_choices": [
-                {
-                    "player_dialogue_choice": "You might be right. Let's aim for more fun.",
-                    "next_node": "end2"
-                },
-                {
-                    "player_dialogue_choice": "I just want everything to be perfect.",
-                    "next_node": "end3"
-                }
-            ]
-        },
-        {
-            "id": "node10",
-            "npc_dialogue": "Shades at the entrance? Now that's a spirit of humor I like!",
-            "tag_of_node": "#laughing",
-            "player_dialogue_choices": [
-                {
-                    "player_dialogue_choice": "Glad you appreciate my joke.",
-                    "next_node": "end2"
-                },
-                {
-                    "player_dialogue_choice": "Wait, were you being serious?",
-                    "next_node": "end3"
-                }
-            ]
-        },
-        {
-            "id": "end1",
-            "npc_dialogue": "I can't wait! This place just keeps getting better. Here's a little something for your efforts.",
-            "tag_of_node": "#positive",
-            "player_dialogue_choices": [],
-            "endtag": "positive"
-        },
-        {
-            "id": "end2",
-            "npc_dialogue": "Sounds good! Keep up the good work.",
-            "tag_of_node": "#neutral",
-            "player_dialogue_choices": [],
-            "endtag": "neutral"
-        },
-        {
-            "id": "end3",
-            "npc_dialogue": "Well, perhaps perfection is overrated. Don't stress too much.",
-            "tag_of_node": "#negative",
-            "player_dialogue_choices": [],
-            "endtag": "negative"
+            "id": "8",
+            "npc_dialogue": "Thank you for your enthusiasm! You've got the spirit! Until next time, keep shining bright and remember the joys of pickles and communities! Farewell!",
+            "tag_of_node": "#thanks #appreciative #positive #friendly #sincere",
+            "end_node_effect_tags": {
+                "mood": 0.3,
+                "restlessness": -0.1,
+                "currency": 150,
+                "statusEffect": "motivated",
+                "add": true
+            }
         }
     ]
 }

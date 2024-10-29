@@ -30,7 +30,7 @@ def get_dialogue_json(input_info):
     performance_dict['endings'] = time.time() - starting_time
     starting_time = time.time()
     print(f'Generating dialogue tree.')
-    tree_by_llm = llm.send_message_for_code(prompt_funcs.dialogue_prompt(abstract, endings_by_llm, tags_by_llm), model='o1-preview')
+    tree_by_llm = llm.send_message_for_code(prompt_funcs.dialogue_prompt(abstract, endings_by_llm, tags_by_llm))
     print(f'Dialogue tree generated in {time.time() - starting_time} seconds.')
     performance_dict['tree'] = time.time() - starting_time
     starting_time = time.time()

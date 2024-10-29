@@ -5,9 +5,6 @@ from streamlit_flow.state import StreamlitFlowState
 from DTG import DTG
 from streamlit_flow.layouts import TreeLayout
 
-if st.session_state.get('curr_state') is None:
-    st.session_state.curr_state = StreamlitFlowState([], [])
-
 def process_json(json_data):
     tree_nodes = []
     tree_edges = []
@@ -16,7 +13,7 @@ def process_json(json_data):
         for i, node in enumerate(dt_nodes_from_json):
             npc_node = StreamlitFlowNode(
                 id=node['id'],
-                pos=(0,0),  # Space out nodes horizontally
+                pos=(i * 200, 0),  # Space out nodes horizontally
                 data={'content': 'NPC : ' + node['npc_dialogue']},
                 draggable=True,
                 node_type='default',
@@ -26,10 +23,10 @@ def process_json(json_data):
             tree_nodes.append(npc_node)
 
             player_choices = node.get('player_dialogue_choices', [])
-            for player_choice in enumerate(player_choices):
+            for j, player_choice in enumerate(player_choices):
                 player_choice_node = StreamlitFlowNode(
                     id=f"{node['id']}_{player_choice['next_node']}",
-                    pos=(0,0),  # Position player choices vertically
+                    pos=(i * 200, (j + 1) * 100),  # Position player choices vertically
                     data={'content': 'Player : ' + player_choice['player_dialogue_choice']},
                     draggable=True,
                     node_type='default',
@@ -48,8 +45,7 @@ def process_json(json_data):
                     source=player_choice_node.id,
                     target=player_choice['next_node']
                 )
-                tree_edges.append(p_edge)
-                tree_edges.append(n_edge)
+                tree_edges.extend([p_edge, n_edge])
 
     except (KeyError, TypeError) as e:
         st.error(f"Error processing JSON data: {e}")
@@ -79,14 +75,18 @@ with st.container():
     npc_personality_text_input = st.text_input("NPC Personality", "friendly", key='npc_personality_text_input')
     npc_convo_additional_flavour_text_input = st.text_input("NPC Convo Additional Flavour", "pickles, groves, and the like", key='npc_convo_additional_flavour_text_input')
 
-    generate = st.button("Generate", key='generate_button')
-    if st.session_state.generate_button :
+    generate = st.button("Generate")
+    if generate:
         GenerateFlow()
         st.rerun()
 
-st.session_state.curr_state = streamlit_flow(key ='example_flow', 
+if st.session_state.get('curr_state') is None:
+    st.session_state.curr_state = StreamlitFlowState([], [])
+
+streamlit_flow(key ='example_flow', 
                 state=st.session_state.curr_state, 
                 layout=TreeLayout(direction='right'), 
+                fit_view=True, 
                 height=500, 
                 enable_node_menu=True,
                 enable_edge_menu=True,
