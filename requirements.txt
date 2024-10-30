@@ -3,3 +3,4 @@ openai
 requests
 python-dotenv
 streamlit-flow-component
+flask
