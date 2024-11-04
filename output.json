@@ -2,166 +2,341 @@
     "nodes": [
         {
             "id": "node1",
-            "npc_dialogue": "Oh! Hi there! I didn't see you over my stumbling. This dance floor seems to have a mind of its own!",
-            "tag_of_node": "#greeting #confused #amused #shy",
+            "npc_dialogue": "Oh, the lights! Is this where the spirits boogie or just a really bright snooze zone?",
+            "tag_of_node": "#greeting #question #confused #amused #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Are you alright? Need a hand?",
+                    "player_dialogue_choice": "Looks like you're more of a lounge lizard than a disco diva, huh?",
                     "next_node": "node2"
                 },
                 {
-                    "player_dialogue_choice": "Maybe the dance floor is just testing your moves!",
+                    "player_dialogue_choice": "You know, naps and grooves aren't mutually exclusive! Have you tried dancing in your sleep?",
                     "next_node": "node3"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node2",
-            "npc_dialogue": "Oh, that's kind of you! I just can't seem to get these steps right. Everyone else makes it look so easy.",
-            "tag_of_node": "#apology #shy #uncooperative #confused",
+            "npc_dialogue": "Oh, definitely lounging! If there was a napping contest, I'd dance my way to the top... of a cloud!",
+            "tag_of_node": "#statement #exclamation #happy #funny #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Don't worry, everyone starts somewhere. Want me to try a simpler dance with you?",
+                    "player_dialogue_choice": "Sounds like a dream job! What about a comfy chair instead of this vibrant madness?",
                     "next_node": "node4"
                 },
                 {
-                    "player_dialogue_choice": "Maybe dancing isn't for everyone. How about we find something else to do?",
+                    "player_dialogue_choice": "Not a bad idea. Imagine the grace of tumbles and trips - pure art!",
                     "next_node": "node5"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node3",
-            "npc_dialogue": "Ha! If that's the case, the floor is winning. I wish I could dance without tripping over my own feet.",
-            "tag_of_node": "#joke #funny #amused #lighthearted",
+            "npc_dialogue": "Dance while dreaming, you say? I must have been haunting the wrong dance halls!",
+            "tag_of_node": "#exclamation #amused #friendly #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Maybe you just need a different beat! Care to try again?",
+                    "player_dialogue_choice": "Well, everyone deserves a comfy haunt. How about helping find one?",
                     "next_node": "node6"
                 },
                 {
-                    "player_dialogue_choice": "Perhaps the floor just needs to get used to your style.",
-                    "next_node": "node5"
+                    "player_dialogue_choice": "How about we start slow with a gentle sway over to that nap corner?",
+                    "next_node": "node7"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node4",
-            "npc_dialogue": "You'd teach me? That would be wonderful! But what if I mess up again?",
-            "tag_of_node": "#request #indirect #shy #helpful",
+            "npc_dialogue": "A chair with a view of the action sounds divine! At least I won't be tripping over... nothing.",
+            "tag_of_node": "#request #disagreement #lazy #shy #confused",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "It's okay to make mistakes. That's how we learn!",
-                    "next_node": "node7"
+                    "player_dialogue_choice": "Here's a sneak peek of the future: spirits in recliners, shaking spectres!",
+                    "next_node": "node8"
                 },
                 {
-                    "player_dialogue_choice": "If you don't try, you'll never know. Let's give it a shot!",
-                    "next_node": "node7"
+                    "player_dialogue_choice": "I'm envious. I might join you shortly! Can I test your cloud now?",
+                    "next_node": "node9"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node5",
-            "npc_dialogue": "Oh, maybe you're right. Dancing might not be for me. But I don't really know what else to do here.",
-            "tag_of_node": "#disappointment #sad #confused #lazy",
+            "npc_dialogue": "Ah, a connoisseur of the clumsy arts! Soon they'll call me the Maestro of Mishaps.",
+            "tag_of_node": "#complaint #sympathy #lazy #shy #disappointed",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Well, what do you enjoy doing?",
-                    "next_node": "node9"
+                    "player_dialogue_choice": "I think you'd make a legendary spirit choreographer!",
+                    "next_node": "node6"
                 },
                 {
-                    "player_dialogue_choice": "Sometimes, stepping out of your comfort zone can be fun.",
-                    "next_node": "node10"
+                    "player_dialogue_choice": "I've got to see your one-and-only ghosty jig!",
+                    "next_node": "node7"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node6",
-            "npc_dialogue": "I'd like that! Maybe a different song will help me find my rhythm.",
-            "tag_of_node": "#encouragement #kind #supportive #optimistic",
+            "npc_dialogue": "Haha! It's nice having someone like you to brighten a lazy smoggy soul's day!",
+            "tag_of_node": "#joke #exclamation #amused #friendly #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Great! Let's find a song you like.",
-                    "next_node": "node4"
+                    "player_dialogue_choice": "Thanks, hoping to make even ghostly hearts flutter with laughter!",
+                    "next_node": "node10"
                 },
                 {
-                    "player_dialogue_choice": "I'm sure with the right tune, you'll be dancing like a pro!",
-                    "next_node": "node4"
+                    "player_dialogue_choice": "Here's to endless snores, and another floaty chat soon!",
+                    "next_node": "node11"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node7",
-            "npc_dialogue": "Maybe you're right! Let's give it another try. Thank you for believing in me!",
-            "tag_of_node": "#gratitude #positive #friendly #optimistic",
+            "npc_dialogue": "Helping hand on the dance floor or kicking back with me, you've got knack!",
+            "tag_of_node": "#apology #sad #shy #confused #humble",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Feeling like an honorary lazy spirit already!",
+                    "next_node": "node10"
+                },
+                {
+                    "player_dialogue_choice": "You're the real ghost with the most, friend!",
+                    "next_node": "node11"
+                }
+            ],
             "end_node_effect": {
-                "mood": 0.3,
-                "restlessness": -0.2,
-                "currency": 50,
-                "statusEffect": "encouraged",
-                "add": true
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
+        },
+        {
+            "id": "node8",
+            "npc_dialogue": "I promise to keep the seat warm. Till next time, rest assured!",
+            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Next time, let's aim for a 'bye-bye' boogie!",
+                    "next_node": "node12"
+                },
+                {
+                    "player_dialogue_choice": "You deserve it, lazy buddy! Watch over the snoozers.",
+                    "next_node": "node12"
+                }
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
             }
         },
         {
             "id": "node9",
-            "npc_dialogue": "Well, I used to enjoy singing, but I'm too shy to sing in front of others now.",
-            "tag_of_node": "#confession #shy #confused #lazy",
+            "npc_dialogue": "Feel free to borrow it anytime! Just don't hog the whole cloud.",
+            "tag_of_node": "#offer #helpful #polite #supportive #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Maybe we can find a quiet spot and you can sing softly?",
-                    "next_node": "node11"
+                    "player_dialogue_choice": "I might not leave; it's like dreaming while awake!",
+                    "next_node": "node12"
                 },
                 {
-                    "player_dialogue_choice": "You shouldn't hide your talents. I'm sure your voice is wonderful.",
+                    "player_dialogue_choice": "Just a quick spirit nap, promise!",
                     "next_node": "node12"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node10",
-            "npc_dialogue": "Stepping out of my comfort zone brought me here, and look how that's going...",
-            "tag_of_node": "#disappointment #sad #confused #lazy",
+            "npc_dialogue": "Appreciate your lighthearted charm, wanderer. I'll always have a laugh saved for you!",
+            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Every new experience comes with challenges. Don't give up!",
+                    "player_dialogue_choice": "Wishing more naps than knots in ghostdom!",
                     "next_node": "node12"
                 },
                 {
-                    "player_dialogue_choice": "Perhaps it's just not the right time. Take things at your own pace.",
-                    "next_node": "node13"
+                    "player_dialogue_choice": "Here's hoping we meet in dreamland, spirit buddy!",
+                    "next_node": "node12"
                 }
-            ]
+            ],
+            "end_node_effect": {
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
+            }
         },
         {
             "id": "node11",
-            "npc_dialogue": "Maybe you're right... But I just don't feel up to it right now.",
-            "tag_of_node": "#apology #uncooperative #sad",
+            "npc_dialogue": "Don't forget, add some jigs to your spectral jiggle next time.",
+            "tag_of_node": "#offer #helpful #polite #supportive #informal",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Only if you promise a nap marathon after!",
+                    "next_node": "node12"
+                },
+                {
+                    "player_dialogue_choice": "You're all that's fluttery and more! Until then, stay lazy!",
+                    "next_node": "node12"
+                }
+            ],
             "end_node_effect": {
-                "mood": 0.0,
-                "restlessness": 0.0,
-                "currency": 0
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
             }
         },
         {
             "id": "node12",
-            "npc_dialogue": "You think so? Well, maybe I'll give it a try when I'm feeling more confident.",
-            "tag_of_node": "#hopeful #shy #optimistic",
+            "npc_dialogue": "Keep your promises. Till we meet again on the dance floor or a snooze spot!",
+            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
+            "player_dialogue_choices": [],
             "end_node_effect": {
-                "mood": 0.0,
-                "restlessness": 0.0,
-                "currency": 0
-            }
-        },
-        {
-            "id": "node13",
-            "npc_dialogue": "I guess I'll just sit this one out. Thanks anyway.",
-            "tag_of_node": "#disappointment #uncooperative #sad",
-            "end_node_effect": {
-                "mood": -0.3,
-                "restlessness": 0.2,
-                "currency": -50,
-                "statusEffect": "disappointed",
-                "add": true
+                "positive": {
+                    "parameter_tag": "currency",
+                    "value": "50"
+                },
+                "neutral": {
+                    "parameter_tag": "restlessness",
+                    "value": "-0.05"
+                },
+                "negative": {
+                    "parameter_tag": "statusEffect",
+                    "value": "confused, add False"
+                }
             }
         }
     ]

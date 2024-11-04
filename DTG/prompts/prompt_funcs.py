@@ -60,7 +60,7 @@ Write one paragraph abstract of conversation between player and NPC(spirit) base
     
 def possible_ending_prompt(abstract):
     POSSIBLE_ENDINGS_PROMPT = f"""NPC of game have following parameters:
-
+Parameter_tags :
     Mood,           // Float amount to add/subtract from mood
     Restlessness,   // Float amount to add/subtract from restlessness
     Currency,       // Int amount to add/subtract from currency

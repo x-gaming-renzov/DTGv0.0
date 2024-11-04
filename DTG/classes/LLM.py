@@ -34,6 +34,19 @@ class LLM():
 
         return response
     
+    def send_message_for_format(self, prompt, format, model='gpt-4o-mini') -> str:
+        completion = self.openai.beta.chat.completions.parse(
+        model=model,
+        messages=[
+                {"role": "user", "content": prompt},
+            ],
+        response_format=format
+        )
+
+        response = completion.choices[0].message.content
+
+        return response
+    
     def generate_embedding(self, data):
         embd = self.openai.embeddings.create(
             model="text-embedding-3-small",
