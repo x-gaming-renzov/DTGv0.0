@@ -1,0 +1,14 @@
+{
+    "positive": {
+        "parameter_tag": "currency",
+        "value": "50"
+    },
+    "neutral": {
+        "parameter_tag": "restlessness",
+        "value": "0.05"
+    },
+    "negative": {
+        "parameter_tag": "mood",
+        "value": "-0.1"
+    }
+}

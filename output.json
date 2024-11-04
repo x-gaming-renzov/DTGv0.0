@@ -2,342 +2,394 @@
     "nodes": [
         {
             "id": "node1",
-            "npc_dialogue": "Oh, the lights! Is this where the spirits boogie or just a really bright snooze zone?",
-            "tag_of_node": "#greeting #question #confused #amused #informal",
+            "npc_dialogue": "Oh, pardon my clumsy entrance! I was just practicing my dance moves to impress the other spirits... or just give them a good giggle?",
+            "tag_of_node": "#greeting #confused #amused #informal #lazy",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Looks like you're more of a lounge lizard than a disco diva, huh?",
+                    "player_dialogue_choice": "That's quite the entrance! Are the spirits here that hard to impress?",
                     "next_node": "node2"
                 },
                 {
-                    "player_dialogue_choice": "You know, naps and grooves aren't mutually exclusive! Have you tried dancing in your sleep?",
+                    "player_dialogue_choice": "You must be the spirit with the most legendary dance moves in the afterlife! What's your secret?",
                     "next_node": "node3"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node2",
-            "npc_dialogue": "Oh, definitely lounging! If there was a napping contest, I'd dance my way to the top... of a cloud!",
-            "tag_of_node": "#statement #exclamation #happy #funny #informal",
+            "npc_dialogue": "Honestly, it's hard to tell if they're impressed or just entertained by my clumsiness! Once, I even tripped over an invisible foot haha!",
+            "tag_of_node": "#answer #amused #honest #chill #neutral",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Sounds like a dream job! What about a comfy chair instead of this vibrant madness?",
+                    "player_dialogue_choice": "Dancing wasn't in the spirit guide manual, was it? How did you end up here like this?",
                     "next_node": "node4"
                 },
                 {
-                    "player_dialogue_choice": "Not a bad idea. Imagine the grace of tumbles and trips - pure art!",
+                    "player_dialogue_choice": "Perhaps we need to get you a professional dancing coach, or... an exorcist for your dance demons!",
                     "next_node": "node5"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node3",
-            "npc_dialogue": "Dance while dreaming, you say? I must have been haunting the wrong dance halls!",
-            "tag_of_node": "#exclamation #amused #friendly #informal",
+            "npc_dialogue": "Ah, well, my secret... let\u2019s just say it involves a lot of accidental twirls and hoping my spectral foot finds solid ground!",
+            "tag_of_node": "#statement #amused #funny #informal #friendly",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Well, everyone deserves a comfy haunt. How about helping find one?",
+                    "player_dialogue_choice": "Accidental twirls? Now that\u2019s a talent! Do you ever crash into other spirits or just the furniture?",
                     "next_node": "node6"
                 },
                 {
-                    "player_dialogue_choice": "How about we start slow with a gentle sway over to that nap corner?",
+                    "player_dialogue_choice": "Seems like you could use a dance floor upgrade, want a hand shaking things up around here?",
                     "next_node": "node7"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node4",
-            "npc_dialogue": "A chair with a view of the action sounds divine! At least I won't be tripping over... nothing.",
-            "tag_of_node": "#request #disagreement #lazy #shy #confused",
+            "npc_dialogue": "I was never much of a dancer in my living days, so now seems like the perfect time to 'kick the bucket' and dance the night away!",
+            "tag_of_node": "#story #amused #funny #informal #lighthearted",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Here's a sneak peek of the future: spirits in recliners, shaking spectres!",
+                    "player_dialogue_choice": "Maybe it's time to turn this concourse into the ultimate ghostly dance party!",
                     "next_node": "node8"
                 },
                 {
-                    "player_dialogue_choice": "I'm envious. I might join you shortly! Can I test your cloud now?",
+                    "player_dialogue_choice": "Let's make sure you get the spotlight you deserve in the spirit talent show!",
                     "next_node": "node9"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node5",
-            "npc_dialogue": "Ah, a connoisseur of the clumsy arts! Soon they'll call me the Maestro of Mishaps.",
-            "tag_of_node": "#complaint #sympathy #lazy #shy #disappointed",
+            "npc_dialogue": "Haha! Now that's a comedy act I'd love to see. Though a professional coaching session could help more than my clumsy footwork!",
+            "tag_of_node": "#suggestion #confused #neutral #logical #patient",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "I think you'd make a legendary spirit choreographer!",
-                    "next_node": "node6"
+                    "player_dialogue_choice": "Perhaps a dance coach it is! I'll see what I can do to upgrade the dance floor too.",
+                    "next_node": "node10"
                 },
                 {
-                    "player_dialogue_choice": "I've got to see your one-and-only ghosty jig!",
-                    "next_node": "node7"
+                    "player_dialogue_choice": "You know, sometimes clumsiness is just another form of art! Keep twirling!",
+                    "next_node": "node11"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node6",
-            "npc_dialogue": "Haha! It's nice having someone like you to brighten a lazy smoggy soul's day!",
-            "tag_of_node": "#joke #exclamation #amused #friendly #informal",
+            "npc_dialogue": "Oh, it's mostly furniture, but I do get a friendly nudge from spirits who have had enough of my silliness.",
+            "tag_of_node": "#joke #funny #amused #lighthearted #relaxed",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Thanks, hoping to make even ghostly hearts flutter with laughter!",
-                    "next_node": "node10"
+                    "player_dialogue_choice": "Seems like you're already quite famous here\u2014let's give your reputation a little polish with a spruced-up dance spot!",
+                    "next_node": "node12"
                 },
                 {
-                    "player_dialogue_choice": "Here's to endless snores, and another floaty chat soon!",
-                    "next_node": "node11"
+                    "player_dialogue_choice": "Furniture must love the company! Well, let's make sure the other spirits are tapping to your beat.",
+                    "next_node": "node13"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node7",
-            "npc_dialogue": "Helping hand on the dance floor or kicking back with me, you've got knack!",
-            "tag_of_node": "#apology #sad #shy #confused #humble",
+            "npc_dialogue": "Oh, a hand would be wonderful. I think we could all use some excitement beyond my usual tumble!",
+            "tag_of_node": "#compliment #friendly #encouraging #polite #sincere",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Feeling like an honorary lazy spirit already!",
-                    "next_node": "node10"
+                    "player_dialogue_choice": "Fantastic! Let\u2019s work on making your dance dreams a hit performance!",
+                    "next_node": "node14"
                 },
                 {
-                    "player_dialogue_choice": "You're the real ghost with the most, friend!",
-                    "next_node": "node11"
+                    "player_dialogue_choice": "Consider it done! Who knew clumsy could lead to such fun ideas!",
+                    "next_node": "node15"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node8",
-            "npc_dialogue": "I promise to keep the seat warm. Till next time, rest assured!",
-            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
+            "npc_dialogue": "Ghostly dance party? I'm in! Just don't expect me to win the competition with my uniquely clumsy style!",
+            "tag_of_node": "#exclamation #surprised #excited #amused #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Next time, let's aim for a 'bye-bye' boogie!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "Win or not, let's make sure everyone has fun shaking their spectral bones!",
+                    "next_node": "node16"
                 },
                 {
-                    "player_dialogue_choice": "You deserve it, lazy buddy! Watch over the snoozers.",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "I'll take care of the after-party arrangements and you handle the choreography!",
+                    "next_node": "node17"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node9",
-            "npc_dialogue": "Feel free to borrow it anytime! Just don't hog the whole cloud.",
-            "tag_of_node": "#offer #helpful #polite #supportive #informal",
+            "npc_dialogue": "The talent show, oh my! With just a little guidance, maybe my twirls could buy me some laughs!",
+            "tag_of_node": "#request #shy #polite #needy #informal",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "I might not leave; it's like dreaming while awake!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "With that attitude, laughter is guaranteed! Let's get you audition-ready!",
+                    "next_node": "node18"
                 },
                 {
-                    "player_dialogue_choice": "Just a quick spirit nap, promise!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "I'm sure they'll love it. Spirits could use some comic relief!",
+                    "next_node": "node19"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node10",
-            "npc_dialogue": "Appreciate your lighthearted charm, wanderer. I'll always have a laugh saved for you!",
-            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
+            "npc_dialogue": "Thank you! With a new floor, maybe twirling won't end with me rolling instead!",
+            "tag_of_node": "#agreement #enthusiastic #happy #friendly #positive",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Wishing more naps than knots in ghostdom!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "Let\u2019s have you be the first spirit to test it\u2014dance like there's no after-afterlife!",
+                    "next_node": "node20"
                 },
                 {
-                    "player_dialogue_choice": "Here's hoping we meet in dreamland, spirit buddy!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "With a new floor, spirits would be floating on Cloud Nine as well!",
+                    "next_node": "node21"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node11",
-            "npc_dialogue": "Don't forget, add some jigs to your spectral jiggle next time.",
-            "tag_of_node": "#offer #helpful #polite #supportive #informal",
+            "npc_dialogue": "Art it is! Here's to a masterpiece in the making, one twirl at a time!",
+            "tag_of_node": "#agreement #enthusiastic #happy #friendly #positive",
             "player_dialogue_choices": [
                 {
-                    "player_dialogue_choice": "Only if you promise a nap marathon after!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "Your artistic presence will be known to all spirits far and wide!",
+                    "next_node": "node22"
                 },
                 {
-                    "player_dialogue_choice": "You're all that's fluttery and more! Until then, stay lazy!",
-                    "next_node": "node12"
+                    "player_dialogue_choice": "Keep being your clumsy wonderful self\u2014the stage is yours!",
+                    "next_node": "node23"
                 }
             ],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
-                },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
-                }
-            }
+            "end_node_effect": "neutral",
+            "is_end_node": false
         },
         {
             "id": "node12",
-            "npc_dialogue": "Keep your promises. Till we meet again on the dance floor or a snooze spot!",
-            "tag_of_node": "#thanks #happy #friendly #sincere #informal",
-            "player_dialogue_choices": [],
-            "end_node_effect": {
-                "positive": {
-                    "parameter_tag": "currency",
-                    "value": "50"
+            "npc_dialogue": "And with that polish, I might just become the talk of the spirit world! Thank you, wise manager!",
+            "tag_of_node": "#offer #friendly #helpful #sincere #relaxed",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Glad to have helped a spirit rise to the occasion!",
+                    "next_node": "node24"
                 },
-                "neutral": {
-                    "parameter_tag": "restlessness",
-                    "value": "-0.05"
-                },
-                "negative": {
-                    "parameter_tag": "statusEffect",
-                    "value": "confused, add False"
+                {
+                    "player_dialogue_choice": "Your famous performances are part of what makes this concourse lively!",
+                    "next_node": "node25"
                 }
-            }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node13",
+            "npc_dialogue": "With all those beats, they'll hear me coming from a mile away\u2014clumsy as I might be.",
+            "tag_of_node": "#story #amused #funny #informal #lighthearted",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Who knew clumsy could become concert-worthy with the right support!",
+                    "next_node": "node26"
+                },
+                {
+                    "player_dialogue_choice": "Your rhythm is an integral part of this chaotic harmony!",
+                    "next_node": "node27"
+                }
+            ],
+            "end_node_effect": "neutral",
+            "is_end_node": true
+        },
+        {
+            "id": "node14",
+            "npc_dialogue": "If I become a hit, we might need a bigger concourse for all my adoring fans!",
+            "tag_of_node": "#warning #confused #serious #sincere #neutral",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "In that case, let's prep for a future expansion!",
+                    "next_node": "node28"
+                },
+                {
+                    "player_dialogue_choice": "Well, you've certainly got the potential for grand spectacles!",
+                    "next_node": "node29"
+                }
+            ],
+            "end_node_effect": "neutral",
+            "is_end_node": true
+        },
+        {
+            "id": "node15",
+            "npc_dialogue": "A little tumble carries a lot of laughs with the right audience. Here's to spontaneity!",
+            "tag_of_node": "#joke #funny #amused #lighthearted #relaxed",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Here's to this spirit concourse, where every tumble is a moment to cherish!",
+                    "next_node": "node30"
+                },
+                {
+                    "player_dialogue_choice": "Let's make sure those spontaneous laughs never end! To laughter forever!",
+                    "next_node": "node31"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node16",
+            "npc_dialogue": "Shake those bones, they say! Thanks for giving me this chance!",
+            "tag_of_node": "#exclamation #surprised #excited #amused #informal",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "I'd say the honor's mine! Keep those bones shaking!",
+                    "next_node": "node32"
+                },
+                {
+                    "player_dialogue_choice": "Next, we'll work on a ghostly conga line!",
+                    "next_node": "node33"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node17",
+            "npc_dialogue": "And I'll make sure every step\u2014even if clumsy\u2014ignites laughter! Thanks for the encouragement!",
+            "tag_of_node": "#compliment #friendly #encouraging #polite #sincere",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "This will likely become a staple event for the concourse!",
+                    "next_node": "node34"
+                },
+                {
+                    "player_dialogue_choice": "The laughter will lead us to fame!",
+                    "next_node": "node35"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node18",
+            "npc_dialogue": "Audition-ready and laughter-guaranteed. Let's make it a memorable act!",
+            "tag_of_node": "#offer #friendly #helpful #sincere #relaxed",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Ready as ever! Bring on the spotlight!",
+                    "next_node": "node36"
+                },
+                {
+                    "player_dialogue_choice": "Here's to making lasting memories!",
+                    "next_node": "node37"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node19",
+            "npc_dialogue": "Comic relief at its best\u2014here's hoping I don't dance myself into a giggle fit!",
+            "tag_of_node": "#joke #funny #amused #lighthearted #relaxed",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "A master of stage presence through laughter\u2014break a legendary leg!",
+                    "next_node": "node38"
+                },
+                {
+                    "player_dialogue_choice": "Well, if you fall, we're here for the comedic rescue!",
+                    "next_node": "node39"
+                }
+            ],
+            "end_node_effect": "neutral",
+            "is_end_node": true
+        },
+        {
+            "id": "node20",
+            "npc_dialogue": "Dance I'll do, and maybe someday become the ghostly Fred Astaire!",
+            "tag_of_node": "#exclamation #surprised #excited #amused #informal",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "Sounds like a plan! Keep up those legendary moves!",
+                    "next_node": "node40"
+                },
+                {
+                    "player_dialogue_choice": "Until then, may all your dances remain spirited!",
+                    "next_node": "node41"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node21",
+            "npc_dialogue": "Floating on Cloud Nine sounds divine\u2014thank you for everything!",
+            "tag_of_node": "#agreement #enthusiastic #happy #friendly #positive",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "You're most welcome. May the concourse be forever lively!",
+                    "next_node": "node42"
+                },
+                {
+                    "player_dialogue_choice": "It's been a thrill\u2014let's keep spirits up!",
+                    "next_node": "node43"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node22",
+            "npc_dialogue": "Now that\u2019s a dream come true: spirits from all realms laughing with me!",
+            "tag_of_node": "#story #amused #funny #informal #lighthearted",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "A dream worth chasing, for sure\u2014let's make it happen!",
+                    "next_node": "node44"
+                },
+                {
+                    "player_dialogue_choice": "Let\u2019s bring that glow to the whole afterlife!",
+                    "next_node": "node45"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
+        },
+        {
+            "id": "node23",
+            "npc_dialogue": "The stage is set and ready for endless clumsy artistry! You're the best!",
+            "tag_of_node": "#compliment #friendly #encouraging #polite #sincere",
+            "player_dialogue_choices": [
+                {
+                    "player_dialogue_choice": "No better way to have forever fun!",
+                    "next_node": "node46"
+                },
+                {
+                    "player_dialogue_choice": "Here's to a fabulous spirit showcase\u2014keep shining!",
+                    "next_node": "node47"
+                }
+            ],
+            "end_node_effect": "positive",
+            "is_end_node": true
         }
     ]
 }

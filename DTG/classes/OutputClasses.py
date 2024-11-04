@@ -18,7 +18,8 @@ class Node(BaseModel):
     npc_dialogue: str
     tag_of_node: str
     player_dialogue_choices: list[Choice]
-    end_node_effect: PossibleEndings = None
+    end_node_effect: str
+    is_end_node: bool
 
 class Tree(BaseModel):
     nodes: list[Node]

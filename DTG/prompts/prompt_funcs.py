@@ -98,6 +98,8 @@ json format:
 
 def dialogue_prompt(abstract, endings_by_llm, tags_by_llm):
     DIALOGUE_TREE_PROMPT = f"""
+Game Context: {ABOUT_GAME}
+
 You are genius a play writer who always writes most engaging and interesting conversation between player and NPC(spirit). You write stories that help player understand spirits and their needs or these stories can be used to provide flavor to game.
 
 RULE :
@@ -109,6 +111,8 @@ RULE :
 6. Conversation is in visual novel style, which means everything have to communicated through dialogues.
 7. ONLY PLAYER HAVE MULTIPLE DIALOGUE OPTIONS, ALWAYS give player multiple choice in dialogue to choose from.
 8. Tree always spread and ends with possible endings.
+9. There is ONLY ONE ENDING for node. 
+10. Tree MUST end in tree nodes with each ending
 
 General guide to good convo :
 1. First Dialogue from NPC should be hook to conversation.
@@ -142,7 +146,8 @@ FORMAT : `
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
+            'end_node_effect' : positive/negative/neutral,
+            'is_end_node' : false/true
         }},
         {{
             'id' : 'unique string id of node',
@@ -158,7 +163,8 @@ FORMAT : `
                     'next_node' : 'unique string id of next node'
                 }}
             ],
-            'end_node_effect' : {{ending dict from possible endings for possible ending node (only for ending node)}}
+            'end_node_effect' : positive/negative/neutral,
+            'is_end_node' : false/true
         }},...
     ]
 }}`
@@ -226,3 +232,23 @@ Format :
 }}
 """
     return FORMATING_PROMPT
+
+def regenrate_node_prompt(node_id, tree, instruction=None):
+    REGENRATE_PROMPT = f"""
+Context : 
+About Game : {ABOUT_GAME}
+
+You are genius play writer. You have written below dialogue tree for a game but user wants you to regenerate it. 
+
+Tree : {tree}
+
+#Task :
+Regenrate following node : 
+Node id to regenerate : {node_id}
+Instructions by user : {instruction}
+
+RULES : 
+1. Do not break consistency and flow of conversation.
+2. ONLY change node that user asked you to.
+3. Do not halucinate. 
+"""
